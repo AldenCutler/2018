@@ -27,7 +27,7 @@
     writeSensors = str => sensorDiv.textContent = str;
 
     async function getSensors() {
-        const response = await fetch('/sensors');
+        const response = await fetch('/1503/sensors');
         const myJson = await response.json();
         writeCounter(myJson.counter);
     }
